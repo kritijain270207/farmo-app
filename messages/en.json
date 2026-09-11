@@ -1,0 +1,201 @@
+﻿{
+  "app": {
+    "name": "Farmo",
+    "tagline": "A Brahmastra for Farmers"
+  },
+  "nav": {
+    "home": "Home",
+    "markets": "Markets",
+    "saathi": "AI Saathi",
+    "buyers": "Buyers",
+    "profile": "Profile"
+  },
+  "login": {
+    "title": "Enter your mobile number",
+    "demoHint": "Demo: any 10-digit number works",
+    "phonePlaceholder": "10-digit mobile number",
+    "sendOtp": "Send OTP",
+    "otpTitle": "Enter the OTP",
+    "otpHint": "OTP sent to {phone}",
+    "verify": "Verify OTP",
+    "fillDemo": "Auto-fill demo OTP",
+    "resend": "Resend OTP"
+  },
+  "setup": {
+    "title": "Your details",
+    "subtitle": "This helps Farmo give the right advice",
+    "namePlaceholder": "Your name",
+    "village": "Village / Taluka",
+    "villagePlaceholder": "Village / Taluka",
+    "cropLabel": "Main crop",
+    "cropHint": "Tap to choose",
+    "qtyLabel": "Approximate quantity you have",
+    "qtyUnit": "quintals",
+    "finish": "Start using Farmo"
+  },
+  "home": {
+    "greeting": "Hello {name} 👋",
+    "accountId": "Farmer account",
+    "loading": "Loading your recommendation…",
+    "weather": {
+      "sunny": "Weather is good to visit mandi today",
+      "partly": "Weather is fair, a long journey is okay",
+      "rainy": "Rain may affect transport today"
+    },
+    "speak": "Speak to ask",
+    "tapToSpeak": "Tap & talk in your own language",
+    "faqLabel": "Common questions",
+    "faq1": "What is today's onion price?",
+    "faq2": "Where should I sell my 40 quintals?",
+    "faq3": "Will the price rise tomorrow?",
+    "decision": {
+      "badge": "Today's Decision",
+      "note": "Real-time mandi & arrival analysis",
+      "sellNow": "SELL NOW",
+      "wait": "WAIT",
+      "divert": "TRY ANOTHER MARKET",
+      "supportLine": "Selling today is better than waiting."
+    },
+    "lotLabel": "Crop & lot size",
+    "recommendedMandi": "Best mandi",
+    "mandiPrice": "Expected mandi price",
+    "transportLabour": "Transport & charges",
+    "trendDiff": "more than yesterday",
+    "transportOk": "Pickup available",
+    "netInHand": "Net in-hand",
+    "netAfterCharges": "After all charges",
+    "totalEarn": "Total net for",
+    "seeHowToSell": "See how to sell",
+    "why": "Why?",
+    "whyTitle": "Why this decision?",
+    "seeMarkets": "Compare all mandis",
+    "breakdown": {
+      "cropValue": "Crop value",
+      "transport": "Transport",
+      "charges": "Mandi charges",
+      "net": "Net in-hand"
+    },
+    "common": {
+      "km": "km",
+      "min": "min",
+      "perQtl": "/Qtl",
+      "qtyUnit": "qtl"
+    },
+    "quickTitle": "Quick Farmer Services",
+    "quickSub": "1-tap help center",
+    "askFarmo": "Ask Farmo",
+    "askFarmoSub": "Voice assistant",
+    "checkMarkets": "Check Markets",
+    "checkMarketsSub": "Compare mandis",
+    "findBuyers": "Find Buyers",
+    "findBuyersSub": "Direct buyers",
+    "alerts": "Alerts",
+    "alertsSub": "Price & weather",
+    "myCrops": "My Crops",
+    "addCrop": "Add crop",
+    "listen": "Listen",
+    "stock": "Stock",
+    "qtyUnit": "qtl",
+    "advice": "Advice",
+    "bookAt": "Book at",
+    "viewDetails": "View details"
+  },
+  "sell": {
+    "back": "Back",
+    "title": "{crop} — Sell Decision",
+    "outcome": {
+      "sellNow": "SELL NOW",
+      "wait": "WAIT",
+      "divert": "TRY ANOTHER MARKET"
+    },
+    "why": "Why this decision?",
+    "returnTitle": "Expected return",
+    "cropValue": "Crop value",
+    "transport": "Transport",
+    "charges": "Mandi charges",
+    "net": "Net in-hand",
+    "qtyUnit": "qtl",
+    "chooseMandi": "Choose mandi",
+    "seeOther": "See other mandis"
+  },
+  "markets": {
+    "title": "Where to sell?",
+    "subtitle": "Ranked by net in-hand income",
+    "loading": "Comparing mandis…",
+    "sortBest": "Best Profit",
+    "sortNearest": "Nearest",
+    "sortLowerTransport": "Lowest Transport",
+    "recommended": "Recommended",
+    "rank": "Rank",
+    "net": "Expected net",
+    "mandiPrice": "Mandi price",
+    "transport": "Transport",
+    "charges": "Mandi charges",
+    "netForYou": "Your estimated income",
+    "mandiPrice2": "Crop value",
+    "sharedSave": "Save {amount} with shared transport",
+    "chooseThis": "Sell here · ₹{net}/Qtl",
+    "arrival": "Arrivals today: {n} bags",
+    "selectVehicle": "Select your vehicle",
+    "vehicles": {
+      "tata_ace": "Tata Ace",
+      "pickup": "Pickup",
+      "truck_10": "10-Wheeler"
+    },
+    "common": {
+      "km": "km",
+      "min": "min"
+    }
+  },
+  "saathi": {
+    "title": "AI Saathi",
+    "subtitle": "Ask me, I will help",
+    "idle": "Tap the mic and speak",
+    "listening": "Listening…",
+    "processing": "Thinking…",
+    "speaking": "Speaking…",
+    "error": "Could not hear. Please try again.",
+    "tapToSpeak": "Tap to speak",
+    "typeMessage": "Type or talk to me…",
+    "send": "Send",
+    "openSaathi": "Continue in AI Saathi",
+    "close": "Close"
+  },
+  "buyers": {
+    "title": "Who wants to buy your crop?",
+    "subtitle": "Verified buyers near you",
+    "verified": "Verified",
+    "offeredPrice": "Offered price",
+    "needsLabel": "Needs",
+    "distance": "Distance",
+    "talk": "Talk",
+    "details": "Details",
+    "offer": "Full offer",
+    "yes": "Yes",
+    "no": "No",
+    "calling": "Calling {phone}…",
+    "types": {
+      "food_processor": "Food Processor",
+      "exporter": "Exporter",
+      "fpo": "Farmer Co-op",
+      "retailer": "Retailer",
+      "cooperative": "Cooperative"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "subtitle": "What happened · why it matters · what to do",
+    "markAll": "Mark all read",
+    "empty": "No notifications yet"
+  },
+  "profile": {
+    "title": "Profile",
+    "member": "Farmer since",
+    "myCrops": "My crops",
+    "language": "Change language",
+    "notifications": "Notification settings",
+    "help": "Help",
+    "support": "Contact support",
+    "logout": "Log out"
+  }
+}

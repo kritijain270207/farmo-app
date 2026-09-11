@@ -1,0 +1,201 @@
+﻿{
+  "app": {
+    "name": "Farmo फार्मों",
+    "tagline": "किसानों का ब्रह्मास्त्र"
+  },
+  "nav": {
+    "home": "होम",
+    "markets": "बाज़ार",
+    "saathi": "AI साथी",
+    "buyers": "खरीदार",
+    "profile": "प्रोफ़ाइल"
+  },
+  "login": {
+    "title": "अपना मोबाइल नंबर डालें",
+    "demoHint": "डेमो: कोई भी 10 अंक का नंबर चलेगा",
+    "phonePlaceholder": "10 अंक का मोबाइल नंबर",
+    "sendOtp": "OTP भेजें",
+    "otpTitle": "OTP दर्ज करें",
+    "otpHint": "OTP भेजा गया: {phone}",
+    "verify": "OTP सत्यापित करें",
+    "fillDemo": "डेमो OTP भरें",
+    "resend": "OTP फिर से भेजें"
+  },
+  "setup": {
+    "title": "आपकी जानकारी",
+    "subtitle": "इससे Farmo सही सलाह दे पाएगा",
+    "namePlaceholder": "आपका नाम",
+    "village": "गांव / तालुका",
+    "villagePlaceholder": "गांव / तालुका",
+    "cropLabel": "मुख्य फसल",
+    "cropHint": "फसल चुनने के लिए टैप करें",
+    "qtyLabel": "आपके पास लगभग कितनी फसल है",
+    "qtyUnit": "क्विंटल",
+    "finish": "Farmo शुरू करें"
+  },
+  "home": {
+    "greeting": "नमस्ते {name} जी 👋",
+    "accountId": "पंजीकृत किसान खाता",
+    "loading": "आपकी सलाह तैयार हो रही है…",
+    "weather": {
+      "sunny": "आज मंडी जाने के लिए मौसम ठीक है",
+      "partly": "मौसम ठीक है, दूर जाने में दिक्कत नहीं",
+      "rainy": "आज बारिश से परिवहन प्रभावित हो सकता है"
+    },
+    "speak": "बोलकर पूछें",
+    "tapToSpeak": "टैप करें और अपनी भाषा में बोलें",
+    "faqLabel": "अक्सर पूछे जाने वाले सवाल",
+    "faq1": "आज प्याज़ का भाव क्या है?",
+    "faq2": "मेरी 40 क्विंटल प्याज़ कहां बेचूं?",
+    "faq3": "क्या कल भाव बढ़ेगा?",
+    "decision": {
+      "badge": "आज का फैसला",
+      "note": "रियल-टाइम मंडी व आवक विश्लेषण",
+      "sellNow": "आज ही बेचें",
+      "wait": "थोड़ा रुकें",
+      "divert": "दूसरी मंडी देखें",
+      "supportLine": "आज बेचना बेहतर रहेगा।"
+    },
+    "lotLabel": "फसल व लॉट साइज़",
+    "recommendedMandi": "सर्वश्रेष्ठ मंडी",
+    "mandiPrice": "अपेक्षित मंडी भाव",
+    "transportLabour": "ढुलाई व चार्जेस",
+    "trendDiff": "कल से अधिक",
+    "transportOk": "पिकअप उपलब्ध",
+    "netInHand": "हाथ में शुद्ध कमाई",
+    "netAfterCharges": "सब खर्चे काटकर",
+    "totalEarn": "कुल शुद्ध प्राप्ति",
+    "seeHowToSell": "बेचने का तरीका देखें",
+    "why": "क्यों?",
+    "whyTitle": "यह फैसला क्यों?",
+    "seeMarkets": "सभी मंडियों की तुलना देखें",
+    "breakdown": {
+      "cropValue": "फसल का मूल्य",
+      "transport": "ढुलाई",
+      "charges": "मंडी चार्जेस",
+      "net": "हाथ में शुद्ध"
+    },
+    "common": {
+      "km": "किमी",
+      "min": "मिनट",
+      "perQtl": "/क्विंटल",
+      "qtyUnit": "क्विंटल"
+    },
+    "quickTitle": "त्वरित किसान सेवाएं",
+    "quickSub": "1-टैप सहायता केंद्र",
+    "askFarmo": "Farmo से पूछें",
+    "askFarmoSub": "आवाज़ सहायता",
+    "checkMarkets": "मंडी तुलना",
+    "checkMarketsSub": "भाव देखें",
+    "findBuyers": "खरीदार खोजें",
+    "findBuyersSub": "सीधे खरीदार",
+    "alerts": "अलर्ट्स",
+    "alertsSub": "भाव व मौसम",
+    "myCrops": "मेरी फसलें",
+    "addCrop": "फसल जोड़ें",
+    "listen": "सुनें",
+    "stock": "स्टॉक",
+    "qtyUnit": "क्विंटल",
+    "advice": "सलाह",
+    "bookAt": "बुक करें",
+    "viewDetails": "विवरण देखें"
+  },
+  "sell": {
+    "back": "वापस",
+    "title": "{crop} बेचने का फैसला",
+    "outcome": {
+      "sellNow": "आज ही बेचें",
+      "wait": "थोड़ा रुकें",
+      "divert": "दूसरी मंडी देखें"
+    },
+    "why": "यह फैसला क्यों?",
+    "returnTitle": "अनुमानित कमाई",
+    "cropValue": "फसल का मूल्य",
+    "transport": "ढुलाई",
+    "charges": "मंडी चार्जेस",
+    "net": "हाथ में शुद्ध",
+    "qtyUnit": "क्विंटल",
+    "chooseMandi": "मंडी चुनें",
+    "seeOther": "दूसरी मंडियां देखें"
+  },
+  "markets": {
+    "title": "कहां बेचें?",
+    "subtitle": "हाथ में कमाई के हिसाब से क्रम",
+    "loading": "मंडियों की तुलना हो रही है…",
+    "sortBest": "सबसे अच्छी कमाई",
+    "sortNearest": "सबसे पास",
+    "sortLowerTransport": "कम ढुलाई",
+    "recommended": "सिफ़ारिशी",
+    "rank": "क्रम",
+    "net": "अपेक्षित शुद्ध",
+    "mandiPrice": "मंडी भाव",
+    "transport": "ढुलाई",
+    "charges": "मंडी चार्जेस",
+    "netForYou": "आपके लिए अनुमानित कमाई",
+    "mandiPrice2": "फसल का मूल्य",
+    "sharedSave": "साझा ट्रांसपोर्ट से {amount} बच सकते हैं",
+    "chooseThis": "यहीं बेचें · ₹{net}/Qtl",
+    "arrival": "आज की आवक: {n} कट्टे",
+    "selectVehicle": "अपना वाहन चुनें",
+    "vehicles": {
+      "tata_ace": "टाटा ऐस",
+      "pickup": "पिकअप",
+      "truck_10": "10 पहिया"
+    },
+    "common": {
+      "km": "किमी",
+      "min": "मिनट"
+    }
+  },
+  "saathi": {
+    "title": "AI साथी",
+    "subtitle": "पूछिए, मैं मदद करूंगा",
+    "idle": "माइक दबाएं और बोलें",
+    "listening": "सुन रहा है…",
+    "processing": "सोच रहा है…",
+    "speaking": "बोल रहा है…",
+    "error": "सुनाई नहीं दिया, फिर से बोलिए",
+    "tapToSpeak": "बोलने के लिए टैप करें",
+    "typeMessage": "लिखें या बोलें…",
+    "send": "भेजें",
+    "openSaathi": "AI साथी में जारी रखें",
+    "close": "बंद करें"
+  },
+  "buyers": {
+    "title": "आपकी फसल कौन खरीदना चाहता है?",
+    "subtitle": "आस-पास के सत्यापित खरीदार",
+    "verified": "सत्यापित",
+    "offeredPrice": "ऑफ़र भाव",
+    "needsLabel": "चाहिए",
+    "distance": "दूरी",
+    "talk": "बात करें",
+    "details": "विवरण देखें",
+    "offer": "पूरा ऑफ़र",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "calling": "{phone} पर कॉल हो रही है…",
+    "types": {
+      "food_processor": "फूड प्रोसेसर",
+      "exporter": "निर्यातक",
+      "fpo": "किसान सहकारी",
+      "retailer": "व्यापारी",
+      "cooperative": "सहकारी समिति"
+    }
+  },
+  "notifications": {
+    "title": "सूचनाएं",
+    "subtitle": "क्या हुआ · क्यों ज़रूरी · क्या करें",
+    "markAll": "सभी पढ़ी हुई करें",
+    "empty": "अभी कोई सूचना नहीं"
+  },
+  "profile": {
+    "title": "प्रोफ़ाइल",
+    "member": "किसान सदस्य",
+    "myCrops": "मेरी फसलें",
+    "language": "भाषा बदलें",
+    "notifications": "सूचना सेटिंग्स",
+    "help": "मदद",
+    "support": "सहायता से संपर्क",
+    "logout": "लॉग आउट"
+  }
+}
