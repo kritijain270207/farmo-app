@@ -1,10 +1,11 @@
-"""AI Saathi chat route."""
+"""AI Saathi chat route — Gemini with keyword-matching fallback."""
 from __future__ import annotations
 
 from fastapi import APIRouter
 
 from ..models import ChatRequest, ChatResponse, CropId
 from ..services.mock_data import get_sell_decision
+from ..services.gemini import chat_with_gemini
 
 router = APIRouter(prefix="/api/ai", tags=["ai"])
 
@@ -24,21 +25,26 @@ async def chat(req: ChatRequest):
         quantity = int(req.farmerContext.get("quantity", 40))
 
     d = get_sell_decision(crop_id, quantity)
-    mandi_short = d.mandi.name.split(" /")[0]
-    q = req.message.lower()
 
-    if any(k in q for k in ["भाव", "price", "क्या", "keya"]):
-        reply = f"आज {d.crop.names.get('hi', 'फसल')} का भाव {mandi_short} में ₹{d.mandi.marketPrice}/Qtl है। बेचने पर हाथ में ₹{d.netAmount}/Qtl मिलेगा।"
-    elif any(k in q for k in ["कहां", "kahan", "where"]):
-        reply = f"सबसे अच्छी कमाई आपको {mandi_short} में मिलेगी — ₹{d.netAmount}/Qtl हाथ में, {d.mandi.distanceKm} किमी दूर। मंडी तुलना में देखें।"
-    elif any(k in q for k in ["बेचूं", "रुकूं", "sell", "wait"]):
-        if d.decision.value == "sell_now":
-            reply = f"मेरी सलाह: आज ही बेचें। ₹{d.netAmount}/Qtl मिल रहा है और आने वाले दिनों में भाव गिर सकता है।"
-        else:
-            reply = "मेरी सलाह: कुछ दिन रुकें। अभी भाव स्थिर है, सरकारी खरीद खुलने का इंतज़ार करें।"
-    elif any(k in q for k in ["क्विंटल", "कितना"]):
-        reply = f"आपके {quantity} क्विंटल {d.crop.names.get('hi', 'फसल')} पर कुल ₹{d.totalNet} मिल सकते हैं। क्या आप मंडी तुलना देखना चाहेंगे?"
-    else:
-        reply = f'समझ गया। मैं आपकी {quantity} क्विंटल {d.crop.names.get("hi", "फसल")} के लिए सबसे अच्छा सौदा ढूंढने में मदद कर सकता हूं। कहें "कहां बेचूं?"'
+    # Build context for Gemini
+    decision_data = {
+        "crop_name": d.crop.names.get("hi", d.crop.names.get("en", "फसल")),
+        "quantity": quantity,
+        "mandi_name": d.mandi.name,
+        "market_price": d.mandi.marketPrice,
+        "net_amount": d.netAmount,
+        "total_net": d.totalNet,
+        "decision": d.decision.value,
+        "transport_cost": d.mandi.transportCost,
+        "mandi_charges": d.mandi.mandiCharges,
+        "reasons": d.reasons,
+    }
+
+    reply = await chat_with_gemini(
+        message=req.message,
+        language=req.language,
+        farmer_context=req.farmerContext,
+        decision_data=decision_data,
+    )
 
     return ChatResponse(reply=reply)
