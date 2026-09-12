@@ -6,7 +6,7 @@ export const defaultLocale = 'hi';
 export default createMiddleware({
   locales,
   defaultLocale,
-  localePrefix: 'as-needed',
+  localePrefix: 'always',
 });
 
 export const config = {

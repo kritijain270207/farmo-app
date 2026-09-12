@@ -42,7 +42,7 @@ export function BottomNav() {
               className={
                 isSaathi
                   ? 'flex flex-col items-center justify-center gap-0.5 -mt-5 min-w-[64px] min-h-[64px] rounded-full bg-primary text-on-primary shadow-lg ring-4 ring-background'
-                  : 'flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[52px] '
+                  : 'flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[56px] '
               }
             >
               <Icon

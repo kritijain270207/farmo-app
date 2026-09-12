@@ -1,5 +1,8 @@
 import { defaultLocaleKey } from '@/lib/i18n/config';
 
+/** Backend API base URL — configurable via NEXT_PUBLIC_API_URL env var. */
+export const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 /** Build a locale-prefixed path, e.g. (hi, "/markets") -> "/markets", (te, "/markets") -> "/te/markets" */
 export function localePath(locale: string, route: string): string {
   if (locale === defaultLocaleKey) return route;
